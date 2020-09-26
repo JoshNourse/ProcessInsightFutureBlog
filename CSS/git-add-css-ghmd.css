@@ -1,0 +1,1084 @@
+/*From https://github.com/sindresorhus/github-markdown-css*/
+/*Merging with Typora Style*/
+
+
+:root {
+    /* dark color for background*/
+    /* default color */
+    --bg-color1: rgb(26, 34, 37);
+    /* for most panel, context, header, etc */
+    --bg-color2: rgb(33, 37, 43);
+    /* for toc and table edit panel */
+    --bg-color3: rgba(16, 17, 20, 0.5);
+    /* for tips */
+    --bg-color4: black;
+    /* for blockquote, codeblock, input, etc */
+    --bg-color5: rgb(29, 31, 35);
+    /* light color for text and icon*/
+    /* default color */
+    --text-color1: rgb(170, 178, 180);
+    /* for text on panel */
+    --text-color2: rgb(220, 220, 220);
+    /* for checkbox and radio */
+    --text-color3: hsl(192, 6%, 40%);
+    /* for tips */
+    --text-color4: whitesmoke;
+    /* for focus mode */
+    --text-color5: rgba(170, 178, 180, 0.5);
+    /* link color */
+    --link-color: rgb(197, 202, 210);
+    /* table color */
+    --table-border-color: rgb(100, 104, 116);
+    --table-thead-color: rgb(31, 35, 40);
+    --table-bg-color: rgb(40, 45, 52);
+    --table-bg-darker-color: rgb(35, 40, 46);
+    /* hover color */
+    /* default hover background color */
+    --hover-bg-color1: rgb(62, 66, 73);
+    /* for input item */
+    --hover-bg-color2: hsl(220, 9%, 14%);
+    /* for button on toc and table edit panel */
+    --hover-bg-color3: rgba(62, 66, 73, 0.8);
+    /* default hover text color */
+    --hover-text-color: white;
+    /* active color */
+    --active-color: var(--hover-bg-color1);
+    /* input color */
+    --input-color: rgb(29, 31, 35);
+    /* menu divider color */
+    --menu-divider-color: rgb(95, 97, 101);
+    /* scrollbar color */
+    --scrollbar-thumb-color: var(--menu-divider-color);
+    --scrollbar-track-color: rgba(95, 97, 101, 0.3);
+    /* theme select color */
+    --theme-select-color: rgba(255, 255, 255, 0.5);
+    --button-color: rgb(62, 66, 73);
+    --select-color: rgb(33, 37, 43);
+    /* focus color */
+    --focus-color: rgba(100, 100, 100, 0.8);
+    --focus-ring-color: var(--focus-color);
+    /* codeblock color */
+    --code-red-color: rgb(221, 110, 115);
+    --code-yellow-color: rgb(218, 192, 123);
+    --code-cyan-color: rgb(86, 182, 194);
+    --code-blue-color: rgb(94, 174, 237);
+    --code-purple-color: rgb(195, 115, 215);
+    --code-orange-color: rgb(221, 153, 103);
+    --code-grey-color: rgb(127, 132, 142);
+    --code-green-color: rgb(152, 195, 123);
+    --code-select-bg-color: rgb(64, 72, 89);
+    --code-cursor-color: rgb(82, 139, 255);
+    /* implicit selecttion text bg color */
+    --select-text-bg-color: rgb(150, 156, 170);
+    /* implicit button color */
+    --primary-color: var(--button-color);
+    --primary-btn-border-color: transparent;
+    --primary-btn-text-color: var(--text-color2);
+    /* implicit sidebar color */
+    --side-bar-bg-color: var(--bg-color2);
+    --control-text-color: var(--text-color2);
+    /* implicit text color */
+    --text-color: var(--text-color1);
+    /* implicit background color for setting menu */
+    --bg-color: var(--bg-color1);
+    /* implicit hover color */
+    --item-hover-bg-color: var(--hover-bg-color1);
+    --item-hover-text-color: var(--hover-text-color);
+    /* implicit active color */
+    --active-file-bg-color: var(--hover-bg-color);
+    /* implicit mathjax edit panel background color */
+    --rawblock-edit-panel-bd: var(--bg-color5);
+    /* implicit focus mode color */
+    --blur-text-color: var(--text-color5);
+    /* implicit search result select color */
+    --search-select-bg-color: var(--select-text-bg-color);
+    --search-select-bg-color: rgb(56, 71, 95);
+  
+    --control-text-hover-color: var(--hover-text-color);
+    /* implicit active file color in sidebar file menu treeview */
+    --active-file-text-color: var(--hover-text-color);
+    --active-file-border-color: var(--hover-text-color);
+  
+    --node-border: var(--menu-divider-color);
+    --node-fill: var(--bg-color2);
+  }
+  
+
+
+#git-add-css .markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+#git-add-css .markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+#git-add-css .markdown-body .anchor:focus {
+  outline: none;
+}
+
+
+
+#git-add-css .markdown-body {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.5;
+    color: var(--text-color1);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+  
+
+
+
+/*Start H1-H6 TAGS*/
+
+
+#git-add-css .markdown-body h1 .octicon-link,
+#git-add-css .markdown-body h2 .octicon-link,
+#git-add-css .markdown-body h3 .octicon-link,
+#git-add-css .markdown-body h4 .octicon-link,
+#git-add-css .markdown-body h5 .octicon-link,
+#git-add-css .markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+#git-add-css .markdown-body h1:hover .anchor,
+#git-add-css .markdown-body h2:hover .anchor,
+#git-add-css .markdown-body h3:hover .anchor,
+#git-add-css .markdown-body h4:hover .anchor,
+#git-add-css .markdown-body h5:hover .anchor,
+#git-add-css .markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+#git-add-css .markdown-body h1:hover .anchor .octicon-link,
+#git-add-css .markdown-body h2:hover .anchor .octicon-link,
+#git-add-css .markdown-body h3:hover .anchor .octicon-link,
+#git-add-css .markdown-body h4:hover .anchor .octicon-link,
+#git-add-css .markdown-body h5:hover .anchor .octicon-link,
+#git-add-css .markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+#git-add-css .markdown-body h1:hover .anchor .octicon-link:before,
+#git-add-css .markdown-body h2:hover .anchor .octicon-link:before,
+#git-add-css .markdown-body h3:hover .anchor .octicon-link:before,
+#git-add-css .markdown-body h4:hover .anchor .octicon-link:before,
+#git-add-css .markdown-body h5:hover .anchor .octicon-link:before,
+#git-add-css .markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+
+#git-add-css .markdown-body h1,
+#git-add-css .markdown-body h2,
+#git-add-css .markdown-body h3,
+#git-add-css .markdown-body h4,
+#git-add-css .markdown-body h5,
+#git-add-css .markdown-body h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+#git-add-css .markdown-body h1,
+#git-add-css .markdown-body h2,
+#git-add-css .markdown-body h3,
+#git-add-css .markdown-body h4,
+#git-add-css .markdown-body h5,
+#git-add-css .markdown-body h6 {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    line-height: 1em;
+    color: var(--text-color1);
+  /*font-weight: 600;*/
+}
+
+
+
+#git-add-css .markdown-body h1,
+#git-add-css .markdown-body h2 {
+  padding-bottom: .3em;
+  border-bottom: 1px solid #eaecef;
+}
+
+
+#git-add-css .markdown-body h1 {
+    font-size: 2.5em;
+    /*margin: .67em 0;*/
+    padding-bottom: 0.5em;
+    border-bottom: 5px double var(--text-color1);
+  }
+
+
+#git-add-css .markdown-body h2 {
+    font-size: 2em;
+    padding-bottom: 0.5em;
+    border-bottom: 3px double var(--text-color1);
+}
+
+/*#git-add-css .markdown-body h1:before,
+#git-add-css .markdown-body h2:before {
+    content: "\00A7  ";
+  }*/
+
+#git-add-css .markdown-body h3 {
+    font-size: 1.75em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid var(--text-color1);
+}
+
+#git-add-css .markdown-body h4 {
+    font-size: 1.55em;
+}
+
+#git-add-css .markdown-body h5 {
+    font-size: 1.35em;
+}
+
+#git-add-css .markdown-body h6 {
+    font-size: 1.2em;
+  /*color: #6a737d;*/
+}
+
+
+
+/*End H1-H6 TAGS*/
+
+#git-add-css .markdown-body details {
+  display: block;
+}
+
+#git-add-css .markdown-body summary {
+  display: list-item;
+}
+
+#git-add-css .markdown-body a {
+  background-color: initial;
+}
+
+#git-add-css .markdown-body a:active,
+#git-add-css .markdown-body a:hover {
+  outline-width: 0;
+}
+
+#git-add-css .markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+#git-add-css .markdown-body img {
+  border-style: none;
+}
+
+#git-add-css .markdown-body code,
+#git-add-css .markdown-body kbd,
+#git-add-css .markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+#git-add-css .markdown-body hr {
+  box-sizing: initial;
+  height: 0;
+  overflow: visible;
+}
+
+#git-add-css .markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+#git-add-css .markdown-body input {
+  overflow: visible;
+}
+
+#git-add-css .markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#git-add-css .markdown-body * {
+  box-sizing: border-box;
+}
+
+#git-add-css .markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+#git-add-css .markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+#git-add-css .markdown-body a:hover {
+  text-decoration: underline;
+}
+
+#git-add-css .markdown-body strong {
+  font-weight: 600;
+}
+
+#git-add-css .markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+#git-add-css .markdown-body hr:after,
+#git-add-css .markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+#git-add-css .markdown-body hr:after {
+  clear: both;
+}
+
+#git-add-css .markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#git-add-css .markdown-body td,
+#git-add-css .markdown-body th {
+  padding: 0;
+}
+
+#git-add-css .markdown-body details summary {
+  cursor: pointer;
+}
+
+#git-add-css .markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+
+#git-add-css .markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+#git-add-css .markdown-body blockquote {
+  margin: 0;
+}
+
+#git-add-css .markdown-body ol,
+#git-add-css .markdown-body ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#git-add-css .markdown-body ol ol,
+#git-add-css .markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+#git-add-css .markdown-body ol ol ol,
+#git-add-css .markdown-body ol ul ol,
+#git-add-css .markdown-body ul ol ol,
+#git-add-css .markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+#git-add-css .markdown-body dd {
+  margin-left: 0;
+}
+
+#git-add-css .markdown-body code,
+#git-add-css .markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+}
+
+#git-add-css .markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#git-add-css .markdown-body input::-webkit-inner-spin-button,
+#git-add-css .markdown-body input::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#git-add-css .markdown-body :checked+.radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #0366d6;
+}
+
+#git-add-css .markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+#git-add-css .markdown-body .border-0 {
+  border: 0!important;
+}
+
+#git-add-css .markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+#git-add-css .markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+#git-add-css .markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+#git-add-css .markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+#git-add-css .markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+#git-add-css .markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+#git-add-css .markdown-body .my-2 {
+  margin-top: 8px!important;
+  margin-bottom: 8px!important;
+}
+
+#git-add-css .markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+#git-add-css .markdown-body .py-0 {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+#git-add-css .markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+#git-add-css .markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+#git-add-css .markdown-body .py-2 {
+  padding-top: 8px!important;
+  padding-bottom: 8px!important;
+}
+
+#git-add-css .markdown-body .pl-3,
+#git-add-css .markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+#git-add-css .markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+#git-add-css .markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+#git-add-css .markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+#git-add-css .markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+#git-add-css .markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+#git-add-css .markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+#git-add-css .markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+#git-add-css .markdown-body .pl-c {
+  color: #6a737d;
+}
+
+#git-add-css .markdown-body .pl-c1,
+#git-add-css .markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+#git-add-css .markdown-body .pl-e,
+#git-add-css .markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+#git-add-css .markdown-body .pl-s .pl-s1,
+#git-add-css .markdown-body .pl-smi {
+  color: #24292e;
+}
+
+#git-add-css .markdown-body .pl-ent {
+  color: #22863a;
+}
+
+#git-add-css .markdown-body .pl-k {
+  color: #d73a49;
+}
+
+#git-add-css .markdown-body .pl-pds,
+#git-add-css .markdown-body .pl-s,
+#git-add-css .markdown-body .pl-s .pl-pse .pl-s1,
+#git-add-css .markdown-body .pl-sr,
+#git-add-css .markdown-body .pl-sr .pl-cce,
+#git-add-css .markdown-body .pl-sr .pl-sra,
+#git-add-css .markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+#git-add-css .markdown-body .pl-smw,
+#git-add-css .markdown-body .pl-v {
+  color: #e36209;
+}
+
+#git-add-css .markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+#git-add-css .markdown-body .pl-ii {
+  color: #fafbfc;
+  background-color: #b31d28;
+}
+
+#git-add-css .markdown-body .pl-c2 {
+  color: #fafbfc;
+  background-color: #d73a49;
+}
+
+#git-add-css .markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+#git-add-css .markdown-body .pl-sr .pl-cce {
+  font-weight: 700;
+  color: #22863a;
+}
+
+#git-add-css .markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+#git-add-css .markdown-body .pl-mh,
+#git-add-css .markdown-body .pl-mh .pl-en,
+#git-add-css .markdown-body .pl-ms {
+  font-weight: 700;
+  color: #005cc5;
+}
+
+#git-add-css .markdown-body .pl-mi {
+  font-style: italic;
+  color: #24292e;
+}
+
+#git-add-css .markdown-body .pl-mb {
+  font-weight: 700;
+  color: #24292e;
+}
+
+#git-add-css .markdown-body .pl-md {
+  color: #b31d28;
+  background-color: #ffeef0;
+}
+
+#git-add-css .markdown-body .pl-mi1 {
+  color: #22863a;
+  background-color: #f0fff4;
+}
+
+#git-add-css .markdown-body .pl-mc {
+  color: #e36209;
+  background-color: #ffebda;
+}
+
+#git-add-css .markdown-body .pl-mi2 {
+  color: #f6f8fa;
+  background-color: #005cc5;
+}
+
+#git-add-css .markdown-body .pl-mdr {
+  font-weight: 700;
+  color: #6f42c1;
+}
+
+#git-add-css .markdown-body .pl-ba {
+  color: #586069;
+}
+
+#git-add-css .markdown-body .pl-sg {
+  color: #959da5;
+}
+
+#git-add-css .markdown-body .pl-corl {
+  text-decoration: underline;
+  color: #032f62;
+}
+
+#git-add-css .markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+#git-add-css .markdown-body .my-2 {
+  margin-bottom: 8px!important;
+}
+
+#git-add-css .markdown-body .my-2 {
+  margin-top: 8px!important;
+}
+
+#git-add-css .markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+#git-add-css .markdown-body .py-0 {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+#git-add-css .markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+#git-add-css .markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+#git-add-css .markdown-body .py-2 {
+  padding-top: 8px!important;
+  padding-bottom: 8px!important;
+}
+
+#git-add-css .markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+#git-add-css .markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+#git-add-css .markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+#git-add-css .markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+#git-add-css .markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+#git-add-css .markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+#git-add-css .markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+#git-add-css .markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+#git-add-css .markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+#git-add-css .markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+#git-add-css .markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+#git-add-css .markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+#git-add-css .markdown-body:after,
+#git-add-css .markdown-body:before {
+  display: table;
+  content: "";
+}
+
+#git-add-css .markdown-body:after {
+  clear: both;
+}
+
+#git-add-css .markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+#git-add-css .markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+#git-add-css .markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+#git-add-css .markdown-body blockquote,
+#git-add-css .markdown-body details,
+#git-add-css .markdown-body dl,
+#git-add-css .markdown-body ol,
+#git-add-css .markdown-body p,
+#git-add-css .markdown-body pre,
+#git-add-css .markdown-body table,
+#git-add-css .markdown-body ul {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+#git-add-css .markdown-body hr {
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+#git-add-css .markdown-body blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: .25em solid #dfe2e5;
+}
+
+#git-add-css .markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+#git-add-css .markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+#git-add-css .markdown-body ol,
+#git-add-css .markdown-body ul {
+  padding-left: 2em;
+}
+
+#git-add-css .markdown-body ol ol,
+#git-add-css .markdown-body ol ul,
+#git-add-css .markdown-body ul ol,
+#git-add-css .markdown-body ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#git-add-css .markdown-body li {
+  word-wrap: break-all;
+}
+
+#git-add-css .markdown-body li>p {
+  margin-top: 16px;
+}
+
+#git-add-css .markdown-body li+li {
+  margin-top: .25em;
+}
+
+#git-add-css .markdown-body dl {
+  padding: 0;
+}
+
+#git-add-css .markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+#git-add-css .markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+#git-add-css .markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+#git-add-css .markdown-body table th {
+  font-weight: 600;
+}
+
+#git-add-css .markdown-body table td,
+#git-add-css .markdown-body table th {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+#git-add-css .markdown-body table tr {
+  background-color: var(--table-thead-color);
+  border-top: 1px solid #c6cbd1;
+}
+
+#git-add-css .markdown-body table tr:nth-child(2n) {
+  background-color: var(--table-bg-darker-color);
+}
+
+#git-add-css .markdown-body img {
+  max-width: 100%;
+  box-sizing: initial;
+  background-color: #fff;
+}
+
+#git-add-css .markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+#git-add-css .markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+#git-add-css .markdown-body code {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+}
+
+#git-add-css .markdown-body pre {
+  word-wrap: normal;
+}
+
+#git-add-css .markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+#git-add-css .markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+#git-add-css .markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+#git-add-css .markdown-body .highlight pre,
+#git-add-css .markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: var(--bg-color5);
+  border-radius: 3px;
+}
+
+#git-add-css .markdown-body pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: initial;
+  border: 0;
+}
+
+#git-add-css .markdown-body .commit-tease-sha {
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 90%;
+  color: #444d56;
+}
+
+#git-add-css .markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+
+#git-add-css .markdown-body .blob-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#git-add-css .markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+#git-add-css .markdown-body .blob-num {
+  width: 1%;
+  min-width: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(27,31,35,.3);
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#git-add-css .markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+#git-add-css .markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+#git-add-css .markdown-body .blob-code {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+#git-add-css .markdown-body .blob-code-inner {
+  overflow: visible;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+  color: #24292e;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+#git-add-css .markdown-body .pl-token.active,
+#git-add-css .markdown-body .pl-token:hover {
+  cursor: pointer;
+  background: #ffea7f;
+}
+
+#git-add-css .markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+#git-add-css .markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+#git-add-css .markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+#git-add-css .markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+#git-add-css .markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+#git-add-css .markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+#git-add-css .markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+#git-add-css .markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+#git-add-css .markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+#git-add-css .markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+#git-add-css .markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+#git-add-css .markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+#git-add-css .markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+#git-add-css .markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+#git-add-css .markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
