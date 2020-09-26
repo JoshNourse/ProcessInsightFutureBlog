@@ -92,8 +92,10 @@ Data Mines in Keystone can be configured to automatically export to Excel. For a
 3. Setup Autorun options
 
 4. 1. Check "Run      Query when query is opened"
+
    2. Check "Export to excel      when query is opened"
-   3. ![Query Options Autorun](https://images.processinsightfuture.com/PnP_DealerInformationSystems_KeystoneDataMine_QueryOptions_AutoRun1.png)
+
+      ![Query Options Autorun](https://images.processinsightfuture.com/PnP_DealerInformationSystems_KeystoneDataMine_QueryOptions_AutoRun1.png)
 
 5. Setup Autosave options
 

@@ -1,11 +1,13 @@
----
+<---
 Title: Power Query Calendar Date Table Template
 Author: Josh Nourse
 Tags: [Power Query, Templates, Date Table]
+Excerpt: "Reference guide to creating a reusable calendar table in power query. Includes the code that can be copy and pasted to your editor"
+FeatureImage: https://images.processinsightfuture.com/PnP_PowerQuery_Calendar_AppliedSteps_Fullsize.png
 CSS: 
 SEO: 
-FeatureImage: https://images.processinsightfuture.com/PnP_PowerQuery_Calendar_AppliedSteps_Fullsize.png
----
+
+--->
 
 
 
