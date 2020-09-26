@@ -1,13 +1,10 @@
-<---
-Title: Power Query Calendar Date Table Template
-Author: Josh Nourse
-Tags: [Power Query, Templates, Date Table]
-Excerpt: "Reference guide to creating a reusable calendar table in power query. Includes the code that can be copy and pasted to your editor"
-FeatureImage: https://images.processinsightfuture.com/PnP_PowerQuery_Calendar_AppliedSteps_Fullsize.png
-CSS: 
-SEO: 
-
---->
+<!--<!--Title: Power Query Calendar Date Table Template-->
+<!--Author: Josh Nourse-->
+<!--Tags: [Power Query, Templates, Date Table]-->
+<!--Excerpt: "Reference guide to creating a reusable calendar table in power query. Includes the code that can be copy and pasted to your editor"-->
+<!--FeatureImage: https://images.processinsightfuture.com/PnP_PowerQuery_Calendar_AppliedSteps_Fullsize.png-->
+<!--CSS:--> 
+<!--SEO:--> 
 
 
 
@@ -17,17 +14,21 @@ SEO:
 
 
 
+[TOC]
 
 
-###### Can I summarize the entire reference in one image
 
-\** Probably not but I can try
+
+
+**Can I summarize the entire reference in one image**
+
+\** *Probably not but I will try*
 
 ![Create a new blank query, use advanced editor to copy in code, enjoy](https://images.ProcessInsightFuture.com/PnP_PowerQuery_Calendar_Singular_FullSize.png)
 
 
 
-<TOC>
+
 
 ### Reference Overview:
 
