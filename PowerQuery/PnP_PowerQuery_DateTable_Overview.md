@@ -58,7 +58,7 @@ Additionally: a related note on performance
 
 
 
-- **Change "Start Date USE ME":  **
+- **Change "Start Date USE ME":**  
   - This is a pointer to one of the pre-configured start date parameters
   - [DEFUALT] = "Start Date Fixed"
     - i.e. If data will only include prior and current year records to compare: Use the "Start Last Year"
@@ -81,7 +81,7 @@ Additionally: a related note on performance
 
 
 
-### Cut to the Chase, give me the code:
+### Cut to the Chase, here is the code:
 
 ```Power Query M
 let
@@ -148,7 +148,7 @@ in
 |                        |            |                                                              |                                                              |
 |                        |            | ##### Explode the  date Columns                              |                                                              |
 |                        |            | ###### Fiscal Period Agnostic                                |                                                              |
-| Date ISO               | type text  | =  Table.AddColumn(#"Changed Type", "Date ISO", each  Date.ToText([Date], "yyyy-MM-dd"), type text) |                                                              |
+| Date ISO               | type text  | =  Table.AddColumn(#"Changed Type", "Date ISO", each  Date.ToText([Date], "yyyy-MM-dd"), type text) | [MS Docs:   Date.ToText](https://docs.microsoft.com/en-us/powerquery-m/date-totext) |
 | YYMM                   | Int64.Type | Date.ToText([Date],  "yyMM"                                  | [MS Docs:   Date.ToText](https://docs.microsoft.com/en-us/powerquery-m/date-totext) |
 | YYYY-MM                | text       | Date.ToText([Date],  "yyy-MM")                               | [MS Docs:   Date.ToText](https://docs.microsoft.com/en-us/powerquery-m/date-totext) |
 | MMM-YY                 | text       | Date.ToText([Date],  "MMM-yy")                               | [MS Docs:   Date.ToText](https://docs.microsoft.com/en-us/powerquery-m/date-totext) |
@@ -194,7 +194,7 @@ The range needs to include at least the entire range of your data but will norma
  
 
 - The template has a default  date range of 01/01/2015 - 12/31/[Next Year] ("Start Date Fixed" - "End Next Year"). This includes at least 5 years of historical information and forecast/budget for at least one year. This is probably larger than needed for most reports but should work out of the box without adjusting.  This can be narrowed down after the report has been created.
-- Template is preconfigures to easily adjust with the following parameters, To update you only need to adjust the pointers in the two "USE ME" steps
+- Template is preconfigured to easily adjust with the following parameters, To update you only need to adjust the pointers in the two "USE ME" steps
 
 | Parameter          | Description                                                  |
 | ------------------ | ------------------------------------------------------------ |
@@ -221,11 +221,11 @@ The range needs to include at least the entire range of your data but will norma
 
  
 
-From the list of pre-configured options above, there are many ways to generate the range of start and end dates. Lets break them downby type.
+From the list of pre-configured options above, there are many ways to generate the range of start and end dates. Lets break them down by type.
 
-Static:  Explicitly state the date.  They are useful when generating a small compact model with limited data for development and testing. Or if the minimum date available in the data source is know (like the last software migration). However, these will probably need periodically updated to keep the report working, so maybe not the best option for production.
+Static:  Explicitly state the date.  They are useful when generating a small compact model with limited data for development and testing. Or if the minimum date available in the data source is known (like the last software migration). However, these will probably need periodically updated to keep the report working, so maybe not the best option for production.
 
-Today:  Based upon a period around today; or rather a period before or after today. The date table can adapt to a point in time and maintain itself based upon the data it expects in relation to today. 
+Today:  Based upon a period around today; some interval before or after today. The date table can adapt to a point in time and maintain itself based upon the data it expects in relation to today. 
 
  i.e. if the data is filtered to compare prior and current year sales, it would need a date table from January of the year prior through the end of the current year. This can all be expressed as a calculation from today using the "Start Last Year" - "End Current Year" parameters.
 
@@ -233,13 +233,13 @@ Today:  Based upon a period around today; or rather a period before or after tod
 
 Dynamic:  Use the data returned in the report to automatically set date range.
 
-Query the fact table, find the first and last dates in specified columns and create a list of dates between them. Honestly a great way to get the most compact and efficient date table. For the application of a generalized template on model where the fact tables may change and perspective could transition from past to future it is difficult to implement at this stage. Once a report model is generated and the performance of the date table needs tuned, this method could be implemented more effectively. ** Note: the parameters to generate these dynamic start and end dates are defined outside of this script but once defined can be substituted into the "USE ME"parameters.
+Query the fact table, find the first and last dates in specified columns, and create a list of dates between them. Honestly a great way to get the most compact and efficient date table. For the application of a generalized template on model where the fact tables may change and perspective could transition from past to future it is difficult to implement at this stage. Once a report model is generated and the performance of the date table needs tuned, this method could be implemented more effectively. ** Note: the parameters to generate these dynamic start and end dates are defined outside of this script but once defined can be substituted into the "USE ME"parameters.
 
  Here is a great write up on how to implement this dynamic range via parameters that I was able to get working: https://www.ehansalytics.com/blog/2019/3/17/create-a-dynamic-date-table-in-power-query
 
  
 
-**Mixed:  Which is what I actually decided to use for the template.** I know the data will not have dates prior to 2015 but I do what the table to grow dynamically into the future. I have chosen to use the "Static Start Date" and include all dates through the "End Next Year" to accommodate some short term forecasting. As a general purpose template calendar table this should hold up for most situations. 
+**Mixed:  Which is what I actually decided to use for the template.** I know the data will not have dates prior to 2015 but I do want the table to grow dynamically into the future. I have chosen to use the "Static Start Date" and include all dates through the "End Next Year" to accommodate some short term forecasting. As a general purpose template calendar table this should hold up for most situations. 
 
  To update the range, just set the Pointers "Start Date USE ME" and "End Date USE ME" to deferent targets.
 
