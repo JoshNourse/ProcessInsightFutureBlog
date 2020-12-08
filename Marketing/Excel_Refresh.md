@@ -1,20 +1,6 @@
-# Headline
 
- 
 
-... Better than a demo 
 
- 
-
-Receive a complementary analysis and recommendations on how to improve any single Excel spreadsheet or report for your organization.  
-
- 
-
-What better way to demonstrate value than produce something you can take with you and use. 
-
- 
-
-read more . . .
 
  
 
