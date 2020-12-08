@@ -18,15 +18,9 @@ read more . . .
 
  
 
-# Article:
+# . . . Better than a demo
 
- 
-
-... Better than a demo 
-
- 
-
-Receive a complementary analysis and recommendations on how to improve any single Excel spreadsheet or report for your organization.  
+ A complementary analysis and recommendations on how to improve any single Excel spreadsheet or report for your organization.  
 
 What better way to demonstrate value than produce something you can take with you and use. 
 
@@ -43,8 +37,8 @@ We could always just setup a demo to review some generic content but the hands-o
  
 
 - Time spent reviewing our service is paid back in time savings for your report
-- The concepts themselves are simple but the leap is understanding when and how to apply them.  Seeing the transformation on your own     report helps everything come together and provide learning that is transferable to other processes that need to be improved.
-- The process provides insight     into your business, your data, reporting proficiency, and the right size     approach for your organization
+- The concepts themselves are simple but the leap is understanding when and how to apply them.  Seeing the transformation on your own report helps everything come together and provide learning that is transferable to other processes that need to be improved.
+- The process provides insight into your business, your data, reporting proficiency, and the right size approach for your organization
 
  
 
@@ -64,17 +58,16 @@ We welcome the most tedious, time consuming report you have. There is almost cer
 
  
 
-```fine print
 Total consulting time for the review is limited to 4 hours. Depending on the breadth and depth of the workbook could range from a few improvements to a complete solution.
 
 There are a number of ways to structure the collaborations based upon your technology, security and privacy concerns. A few possibilities are outlined below but open to any way that makes sense for your business.
 
 No solution is bulletproof, adhering to good design practices will help protect workbooks from breaking. However every solution may eventually break. Learn the concepts and how they are implemented so you can maintain in the future. This free consultation does not include any continuing warranties or guarantees for maintaining proposed solutions into the future.
-```
 
- 
 
-  
+
+
+
 
 # Process Overview:
 
@@ -118,8 +111,9 @@ Do work on your machine during an online meeting. It is helpful if I have the ab
 
 ** For local clients, this could also be done in person.
 
-| Pros | Privacy and security: All data stays under your control.     |
+|      |                                                              |
 | ---- | ------------------------------------------------------------ |
+| Pros | Privacy and security: All data stays under your control.     |
 | Cons | Time limit may reduce the numbers of features that can be implemented during the review.<br />The report to be analyzed will typically need to be a smaller report that takes less than an hour to complete under the current process.<br />Because work cannot be completed asynchronously, this option is limited to two hours. |
 
 
@@ -128,8 +122,9 @@ Do work on your machine during an online meeting. It is helpful if I have the ab
 
 ### Also Good: Send me video of the report process
 
-| Pros | Privacy and security: All data stays under your control.<br />Video may contain confidential information which will be treated with respect but no data leaves your control. |
+|      |                                                              |
 | ---- | ------------------------------------------------------------ |
+| Pros | Privacy and security: All data stays under your control.<br />Video may contain confidential information which will be treated with respect but no data leaves your control. |
 | Cons | While we can make recommendation on improving and provide some examples of how to implement, without the actual workbook and data a working model cannot be recreated from scratch. |
 
 
@@ -138,16 +133,18 @@ Do work on your machine during an online meeting. It is helpful if I have the ab
 
 ### Better: Send the file and video of the current process
 
-| Pros | Can accommodate longer processes to complete<br />More complete recommendations with working examples. |
+|      |                                                              |
 | ---- | ------------------------------------------------------------ |
+| Pros | Can accommodate longer processes to complete<br />More complete recommendations with working examples. |
 | Cons | Privacy and security: We will need to temporarily work with your files and data on our system but will adhere to strict data governance standards. |
 
 
 
 ### Best: (Office 365) Create a team, add Process Insight Future as guest user
 
-| Pros | Can accommodate longer processes to complete<br />More complete recommendations with working examples.<br />The files live on your tenant, only loaded into working memory while actively being developed<br />The files live on your tenant, only loaded into working memory while actively being developed<br />After the review, just remove Process Insight Future from the team<br />Tests infrastructure for future email-less collaboration |
+|      |                                                              |
 | ---- | ------------------------------------------------------------ |
+| Pros | Can accommodate longer processes to complete<br />More complete recommendations with working examples.<br />The files live on your tenant, only loaded into working memory while actively being developed<br />The files live on your tenant, only loaded into working memory while actively being developed<br />After the review, just remove Process Insight Future from the team<br />Tests infrastructure for future email-less collaboration |
 | Cons | Some IT administration to get set up if external users are not already integrated in your tenant |
 
 
