@@ -14,7 +14,7 @@ Could there be some uncapitalized expenses in there? Never - right?
 
  
 
-# Here is the report . . .
+## Here is the report . . .
 
 
 
@@ -22,7 +22,9 @@ Could there be some uncapitalized expenses in there? Never - right?
 
 
 
-# Here is the formula to show all transaction greater than $1,000
+
+
+## Here is the formula to show all transaction greater than $1,000
 
  
 
@@ -37,7 +39,7 @@ Could there be some uncapitalized expenses in there? Never - right?
 =FILTER(Export!$A:$J,Export!$I:$I>1000)
 ```
 
-
+** You only type the formula into the first cell, Excel "spills" as needed to adjacent cells. Welcome to Dynamic Arrays!!
 
 
 
@@ -45,9 +47,17 @@ Could there be some uncapitalized expenses in there? Never - right?
 
 
 
+### Dig in
+
+# Dig in . . .
+
+ 
+
+Ok, that is just the start. To dig in check out the articles at ExcelJet and start dreaming.
+
+https://exceljet.net/dynamic-array-formulas-in-excel
 
 
-** You only type the formula into the first cell, Excel "spills" as needed to adjacent cells. Welcome to Dynamic Arrays!!
 
 
 
